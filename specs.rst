@@ -2,7 +2,7 @@
 Specification: Widget Textable TreeTagger
 #########################################
 
-htrtzd
+
 
 1 Introduction
 **************
@@ -57,7 +57,8 @@ Créer un Widget Textable Treeanalysis qui utilise TreeTagger_ pour annoter un t
 Orange 2.7
 Orange Textable 1.5.2
 Treetagger  
-Python Subprocess
+Python Subprocess https://docs.python.org/2/library/subprocess.html
+
 
 
 2.1 Mock-up de l'interface
