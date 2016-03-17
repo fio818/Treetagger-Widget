@@ -59,6 +59,7 @@ Orange Textable 1.5.2
 Treetagger  
 Python Subprocess https://docs.python.org/2/library/subprocess.html
 
+http://www.gutenberg.org/cache/epub/2610/pg2610.txt
 
 
 2.1 Mock-up de l'interface
