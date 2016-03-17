@@ -80,10 +80,11 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
   - annoter 2 langues (disponibles)
     en, fr (français par défaut)
   - quelques autres options
-  
+  Output for each token, Input option ?
 
 2.3 Fonctionnalités principales
 ===============================
+Depuis un widget d'entrée (text files), notre widget treetagger va ressortir une segmentation avec annotation de un ou plusieurs textes.
 Segmentation Treetagger
 Utilisation de lemmes
 Output autant de segmentations que de tokens
