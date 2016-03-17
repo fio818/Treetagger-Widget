@@ -68,7 +68,7 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 
 2.2 Fonctionnalités minimales
 =============================
-..
+
   - input: segments (textes)
   - output: segments annotées (annotation: TAG, annotation: segment d'origine)
   
