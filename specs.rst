@@ -54,14 +54,15 @@ Créer un Widget Textable Treeanalysis qui utilise TreeTagger_ pour annoter un t
 
 2. Technique
 ************
-  
+Orange 2.7
+Orange Textable 1.5.2
+Treetagger  
+Python Subprocess
 
 
 2.1 Mock-up de l'interface
 ==========================
-Orange 2.7
-Orange Textable 1.5.2
-Treetagger
+
 
 
 2.2 Fonctionnalités minimales
