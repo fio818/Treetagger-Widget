@@ -63,7 +63,7 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 
 2.1 Mock-up de l'interface
 ==========================
-
+file:///Users/FionaTestuz/Desktop/advance%20settings.png
 
 
 2.2 Fonctionnalités minimales
@@ -96,7 +96,7 @@ ainsi que les options d'analyse choisies (2 langues à choix, output for each to
 * Segmentation Treetagger
 * Utilisation de lemmes
 * Output autant de segmentations que de tokens
-
+* Options de 2 langues à choix, output for each token, input option,.. TODO
 
 2.4 Fonctionnalités optionelles
 ===============================
