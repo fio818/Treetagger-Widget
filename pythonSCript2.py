@@ -79,10 +79,36 @@ class OWTreetagger(OWWidget):
 
         self.sendData()
         
+        
+    def verifier_treetagger:
+    
+        self.optionsBox = OWGUI.widgetBox(self.controlArea, '')
+        OWGUI.spin(
+            widget=self.optionsBox,          
+            master=self, 
+            value='xxx',
+            label='Emplacement de Treetagger: ', 
+            callback=self.sendData,
+            tooltip="rentrer l'emplacement de Treetagger pour pouvoir l'utiliser par la suite.",
+            min=0, 
+            max=50, 
+            step=1,
+        )
+        
+        OWGUI.button(self.optionsBox, self, "Commit", callback=self.commit)
+        self.optionsBox.setDisabled(1)
+        
+        self.resize(100,50)
+    
+    def commit(self):
+        self.send("Sampled Data", self.sample)
+        self.send("Other Data", self.otherdata)
+        
     def processInputData(self, inputData):
         """Method that processes the input data (as specified in __init__)."""
         # Store input data in attribute of this widget (so it can be accessed
         # from other methods).
+        self.verifier_treetagger
         self.inputData = inputData  
         
         """
