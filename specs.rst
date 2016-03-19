@@ -68,31 +68,34 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 
 2.2 Fonctionnalités minimales
 =============================
-
-  - input: segments (textes)
-  - output: segments annotées (annotation: TAG, annotation: segment d'origine)
+* input: segments (textes)
+* output: segments annotées (annotation: TAG, annotation: segment d'origine)
   
   +------------------+      +-------+------------------------+----------------------+
   | segment 1 PHRASE | -->  | Mot 1 | annotation: segment: 1 | annotation: TAG: NOM |
   +------------------+      +-------+ -----------------------+----------------------+
   | segment 2 TEXTW  |
   +------------------+
-  - annoter 2 langues (disponibles)
-    en, fr (français par défaut)
-  - quelques autres options
-  Output for each token, Input option ?
+  
+* afficher une fenetre pour demander l'enplacement de treetagger lors de l'utilisation du wigdget
+* annoter 2 langues (disponibles)
+        - en, fr (français par défaut)
+* quelques autres options
+Output for each token, Input option ?
+
 
 2.3 Fonctionnalités principales
 ===============================
-Depuis un widget d'entrée (text files), notre widget treetagger va ressortir une segmentation avec annotation de un ou plusieurs textes.
-Segmentation Treetagger
-Utilisation de lemmes
-Output autant de segmentations que de tokens
+* Depuis un widget d'entrée (text files), notre widget treetagger va ressortir une segmentation avec annotation de un ou plusieurs textes.
+* Segmentation Treetagger
+* Utilisation de lemmes
+* Output autant de segmentations que de tokens
 
 
 2.4 Fonctionnalités optionelles
 ===============================
-Choix de langue 
+* Choix de langue 
+* Si un widget treetagger est déjà utilisé dans le travail en cour, ne pas redemander le lien pour treetagger et réutiliser celui entré ulterieurement.
 
 
 2.5 Tests
@@ -102,17 +105,21 @@ Le widget fonctionne si les fonctionnalités minimales et principales fonctionne
 
 3. Etapes
 *********
-Création d'un compte Github
-Cahier des charges
-Interface
-Recherche et documentation
+* Phase 1
+        * Création d'un compte Github
+        * Cahier des charges
+        * Installation de Treetagger
+        * Interface
+        * Recherche et documentation
 
-Codage 
-Intégration à Orange Textable
+* Phase 2
+        * Codage 
+        * Intégration à Orange Textable
 
-Tester le widget raccourci Treetagger 
-Le raccourci Treetagger passe par la fonction recode 
-Une fois le recode accompli, utilisation de la fonction xml
+* Phase 3
+        * Tester le widget raccourci Treetagger 
+        * Le raccourci Treetagger passe par la fonction recode 
+        * Une fois le recode accompli, utilisation de la fonction xml
 
 3.1 Version alpha
 =================
