@@ -85,7 +85,7 @@ ainsi que les options d'analyse choisies (2 langues à choix, output for each to
    +------------------+      +-------+------------------------+----------------------+
    | segment 1 PHRASE | -->  | Mot 1 | annotation: segment: 1 | annotation: TAG: NOM |
    +------------------+      +-------+ -----------------------+----------------------+
-  | segment 2 TEXTE  |
+   | segment 2 TEXTE  |
    +------------------+
   
 
@@ -145,4 +145,4 @@ TODO
 
 4. Infrastructure
 =================
-Le projet est disponible sur GitHub à l'adresse https://github.com/xbarros/Treetagger-Widget 
+Le projet est disponible sur GitHub à l'adresse https://github.com/fio818/Treetagger-Widget 
