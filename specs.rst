@@ -68,25 +68,30 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 
 2.2 Fonctionnalités minimales
 =============================
-* input: segments (textes)
-* output: segments annotées (annotation: TAG, annotation: segment d'origine)
+* input: segments (textes,phrases ou mots)
+Possibilité de retirer l'annotation du segments (par exemple annotation titre) afin de pouvoir par la suite situer le segement dans le texte
+*Entrée dans le widgets:
+Interface demandant à l'utilisateur où est placé treetagger dans son ordinateur (chemin d'accès)
+ainsi que les options d'analyse choisies (2 langues à choix, output for each token, input option...??)
+
+Opérations du widget:
+1. Test l'Input, si conditions du nombre de caractères minimums (A Definir) pas remplies message d'erreur
+2. Envoi l'information au logiciel treetagger
+3. Récupère l'information en segmentation
+
+* output: segments en mots annotées (annotation: TAG, annotation: segment d'origine)
   
   +------------------+      +-------+------------------------+----------------------+
   | segment 1 PHRASE | -->  | Mot 1 | annotation: segment: 1 | annotation: TAG: NOM |
   +------------------+      +-------+ -----------------------+----------------------+
-  | segment 2 TEXTW  |
+  | segment 2 TEXTE  |
   +------------------+
   
-* afficher une fenetre pour demander l'enplacement de treetagger lors de l'utilisation du wigdget
-* annoter 2 langues (disponibles)
-        - en, fr (français par défaut)
-* quelques autres options
-Output for each token, Input option ?
 
 
 2.3 Fonctionnalités principales
 ===============================
-* Depuis un widget d'entrée (text files), notre widget treetagger va ressortir une segmentation avec annotation de un ou plusieurs textes.
+* Depuis un widget d'entrée (text files), notre widget treetagger va ressortir une segmentation avec annotation de un ou plusieurs textes selon sa position et son tag.
 * Segmentation Treetagger
 * Utilisation de lemmes
 * Output autant de segmentations que de tokens
@@ -95,13 +100,15 @@ Output for each token, Input option ?
 2.4 Fonctionnalités optionelles
 ===============================
 * Choix de langue 
-* Si un widget treetagger est déjà utilisé dans le travail en cour, ne pas redemander le lien pour treetagger et réutiliser celui entré ulterieurement.
+* Si un widget treetagger est déjà utilisé dans le travail en cours, ne pas redemander le lien pour treetagger et réutiliser celui entré précédamment.
 
 
 2.5 Tests
 =========
 Le widget fonctionne si les fonctionnalités minimales et principales fonctionnent (2.2 et 2.3)
+Tests initaux avec python script pour faire appel à treetagger afin de définir différentes fonctionalités
 
+TODO
 
 3. Etapes
 *********
@@ -110,7 +117,7 @@ Le widget fonctionne si les fonctionnalités minimales et principales fonctionne
         * Cahier des charges
         * Installation de Treetagger
         * Interface
-        * Recherche et documentation
+        * Recherche, tests initiaux et documentation
 
 * Phase 2
         * Codage 
@@ -132,7 +139,7 @@ Le widget fonctionne si les fonctionnalités minimales et principales fonctionne
 ==========================
 * Les fonctionnalités principales sont complétement prises en charge par le logiciel.
 * La documentation du logiciel est complète.
-* Le logiciel possède des routines de test de ses fonctionnalitées (principales ou optionelles.
+* Le logiciel possède des routines de test de ses fonctionnalitées (principales ou optionelles)
 
 
 4. Infrastructure
