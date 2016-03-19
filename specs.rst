@@ -26,29 +26,29 @@ Créer un Widget Textable Treeanalysis qui utilise TreeTagger_ pour annoter un t
 
 
 *Xavier Barros: xavier.barros@unil.ch
-        -code
-        -test
-        -github dealer
+        *code
+        *test
+        *github dealer
 
 *Fiona Testuz: fiona.testuz@unil.ch
-        -code
-        -documentation
-        -specification
-        -interface
+        *code
+        *documentation
+        *specification
+        *interface
         
 *Michael Wuethrich: michael.t.wuethrich@live.fr
-        -test
-        -code
-        -specification
+        *test
+        *code
+        *specification
         
 *Chloe Beutler: chloe.beutler@unil.ch
-        -code
-        -documentation
-        -specification
+        *code
+        *documentation
+        *specification
         
 *Gaetan Schneider: gaetan.schneider@unil.ch
-        -code
-        -documentation
+        *code
+        *documentation
 
 
 
@@ -70,22 +70,23 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 =============================
 * input: segments (textes,phrases ou mots)
 Possibilité de retirer l'annotation du segments (par exemple annotation titre) afin de pouvoir par la suite situer le segement dans le texte
-*Entrée dans le widgets:
+
+* Entrée dans le widgets:
 Interface demandant à l'utilisateur où est placé treetagger dans son ordinateur (chemin d'accès)
 ainsi que les options d'analyse choisies (2 langues à choix, output for each token, input option...??)
 
-Opérations du widget:
+* Opérations du widget:
 1. Test l'Input, si conditions du nombre de caractères minimums (A Definir) pas remplies message d'erreur
 2. Envoi l'information au logiciel treetagger
 3. Récupère l'information en segmentation
 
 * output: segments en mots annotées (annotation: TAG, annotation: segment d'origine)
   
-  +------------------+      +-------+------------------------+----------------------+
-  | segment 1 PHRASE | -->  | Mot 1 | annotation: segment: 1 | annotation: TAG: NOM |
-  +------------------+      +-------+ -----------------------+----------------------+
+   +------------------+      +-------+------------------------+----------------------+
+   | segment 1 PHRASE | -->  | Mot 1 | annotation: segment: 1 | annotation: TAG: NOM |
+   +------------------+      +-------+ -----------------------+----------------------+
   | segment 2 TEXTE  |
-  +------------------+
+   +------------------+
   
 
 
