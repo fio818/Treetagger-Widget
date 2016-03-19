@@ -26,29 +26,29 @@ Créer un Widget Textable Treeanalysis qui utilise TreeTagger_ pour annoter un t
 
 
 *Xavier Barros: xavier.barros@unil.ch
-        -code
-        -test
-        -github dealer
+        *code
+        *test
+        *github dealer
 
 *Fiona Testuz: fiona.testuz@unil.ch
-        -code
-        -documentation
-        -specification
-        -interface
+        *code
+        *documentation
+        *specification
+        *interface
         
 *Michael Wuethrich: michael.t.wuethrich@live.fr
-        -test
-        -code
-        -specification
+        *test
+        *code
+        *specification
         
 *Chloe Beutler: chloe.beutler@unil.ch
-        -code
-        -documentation
-        -specification
+        *code
+        *documentation
+        *specification
         
 *Gaetan Schneider: gaetan.schneider@unil.ch
-        -code
-        -documentation
+        *code
+        *documentation
 
 
 
@@ -68,51 +68,66 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 
 2.2 Fonctionnalités minimales
 =============================
+* input: segments (textes,phrases ou mots)
+Possibilité de retirer l'annotation du segments (par exemple annotation titre) afin de pouvoir par la suite situer le segement dans le texte
 
-  - input: segments (textes)
-  - output: segments annotées (annotation: TAG, annotation: segment d'origine)
+* Entrée dans le widgets:
+Interface demandant à l'utilisateur où est placé treetagger dans son ordinateur (chemin d'accès)
+ainsi que les options d'analyse choisies (2 langues à choix, output for each token, input option...??)
+
+* Opérations du widget:
+1. Test l'Input, si conditions du nombre de caractères minimums (A Definir) pas remplies message d'erreur
+2. Envoi l'information au logiciel treetagger
+3. Récupère l'information en segmentation
+
+* output: segments en mots annotées (annotation: TAG, annotation: segment d'origine)
   
-  +------------------+      +-------+------------------------+----------------------+
-  | segment 1 PHRASE | -->  | Mot 1 | annotation: segment: 1 | annotation: TAG: NOM |
-  +------------------+      +-------+ -----------------------+----------------------+
-  | segment 2 TEXTW  |
-  +------------------+
-  - annoter 2 langues (disponibles)
-    en, fr (français par défaut)
-  - quelques autres options
-  Output for each token, Input option ?
+   +------------------+      +-------+------------------------+----------------------+
+   | segment 1 PHRASE | -->  | Mot 1 | annotation: segment: 1 | annotation: TAG: NOM |
+   +------------------+      +-------+ -----------------------+----------------------+
+  | segment 2 TEXTE  |
+   +------------------+
+  
+
 
 2.3 Fonctionnalités principales
 ===============================
-Depuis un widget d'entrée (text files), notre widget treetagger va ressortir une segmentation avec annotation de un ou plusieurs textes.
-Segmentation Treetagger
-Utilisation de lemmes
-Output autant de segmentations que de tokens
+* Depuis un widget d'entrée (text files), notre widget treetagger va ressortir une segmentation avec annotation de un ou plusieurs textes selon sa position et son tag.
+* Segmentation Treetagger
+* Utilisation de lemmes
+* Output autant de segmentations que de tokens
 
 
 2.4 Fonctionnalités optionelles
 ===============================
-Choix de langue 
+* Choix de langue 
+* Si un widget treetagger est déjà utilisé dans le travail en cours, ne pas redemander le lien pour treetagger et réutiliser celui entré précédamment.
 
 
 2.5 Tests
 =========
 Le widget fonctionne si les fonctionnalités minimales et principales fonctionnent (2.2 et 2.3)
+Tests initaux avec python script pour faire appel à treetagger afin de définir différentes fonctionalités
 
+TODO
 
 3. Etapes
 *********
-Création d'un compte Github
-Cahier des charges
-Interface
-Recherche et documentation
+* Phase 1
+        * Création d'un compte Github
+        * Cahier des charges
+        * Installation de Treetagger
+        * Interface
+        * Recherche, tests initiaux et documentation
 
-Codage 
-Intégration à Orange Textable
+* Phase 2
+        * Codage 
+        * Intégration à Orange Textable
 
-Tester le widget raccourci Treetagger 
-Le raccourci Treetagger passe par la fonction recode 
-Une fois le recode accompli, utilisation de la fonction xml
+* Phase 3
+        * Tester le widget raccourci Treetagger 
+        * Le raccourci Treetagger passe par la fonction recode 
+        * Une fois le recode accompli, utilisation de la fonction xml
 
 3.1 Version alpha
 =================
@@ -125,7 +140,7 @@ Une fois le recode accompli, utilisation de la fonction xml
 ==========================
 * Les fonctionnalités principales sont complétement prises en charge par le logiciel.
 * La documentation du logiciel est complète.
-* Le logiciel possède des routines de test de ses fonctionnalitées (principales ou optionelles.
+* Le logiciel possède des routines de test de ses fonctionnalitées (principales ou optionelles)
 
 
 4. Infrastructure
