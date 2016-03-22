@@ -82,11 +82,12 @@ ainsi que les options d'analyse choisies (2 langues à choix, output for each to
 
 * output: segments en mots annotées (annotation: TAG, annotation: segment d'origine)
   
-   +------------------+      +-------+------------------------+----------------------+
-   | segment 1 PHRASE | -->  | Mot 1 | annotation: segment: 1 | annotation: TAG: NOM |
-   +------------------+      +-------+ -----------------------+----------------------+
+   
+   | segment 1 PHRASE | 
+                            -->  | Mot 1 | annotation: segment: 1 | annotation: TAG: NOM |
+   
    | segment 2 TEXTE  |
-   +------------------+
+  
   
 
 
