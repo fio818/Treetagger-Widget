@@ -63,8 +63,6 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 
 2.1 Mock-up de l'interface
 ==========================
-file:///Users/FionaTestuz/Desktop/advance%20settings.png
-
 
 2.2 Fonctionnalités minimales
 =============================
@@ -101,7 +99,7 @@ ainsi que les options d'analyse choisies (2 langues à choix, output for each to
 2.4 Fonctionnalités optionelles
 ===============================
 * Choix de langue 
-* Si un widget treetagger est déjà utilisé dans le travail en cours, ne pas redemander le lien pour treetagger et réutiliser celui entré précédamment.
+* Si un widget treetagger est déjà utilisé dans le travail en cours, ne pas redemander le lien pour treetagger et réutiliser celui entré précédemment.
 
 
 2.5 Tests
