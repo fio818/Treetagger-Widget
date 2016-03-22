@@ -64,7 +64,7 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 2.1 Mock-up de l'interface
 ==========================
 
-Treetagger-Widget/Treetagger interface.png
+.. image::"Treetagger interface.png"
 
 2.2 Fonctionnalités minimales
 =============================
