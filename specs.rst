@@ -64,8 +64,8 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 2.1 Mock-up de l'interface
 ==========================
 
-.. image::img/main_interface.png
-.. image::img/advanced_settings.png
+ .. image::img/main_interface.png
+ .. image::img/advanced_settings.png
 
 2.2 Fonctionnalités minimales
 =============================
