@@ -42,9 +42,9 @@ Créer un Widget Textable Treeanalysis qui utilise TreeTagger_ pour annoter un t
         *specification
         
 *Chloe Beutler: chloe.beutler@unil.ch
-        *code
-        *documentation
-        *specification
+        * code
+        * documentation
+        * specification
         
 *Gaetan Schneider: gaetan.schneider@unil.ch
         *code
@@ -70,7 +70,7 @@ Python Subprocess https://docs.python.org/2/library/subprocess.html
 2.2 Fonctionnalités minimales
 =============================
 * input: segments (textes,phrases ou mots)
-Possibilité de retirer l'annotation du segments (par exemple annotation titre) afin de pouvoir par la suite situer le segement dans le texte
+Possibilité d'extraire l'annotation du segments (par exemple annotation titre) afin de pouvoir par la suite situer le segement dans le texte
 
 * Entrée dans le widgets:
 Interface demandant à l'utilisateur où est placé treetagger dans son ordinateur (chemin d'accès)
